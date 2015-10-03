@@ -1,0 +1,17 @@
+### SETUP
+
+To install jeid, this time I will try the melpa stable archive. It is
+added by adding the following to the .emacs file
+
+;; Add melpa stable to package archives
+(add-to-list 'package-archives
+'("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
+
+To install jedi, follow the instructions here:
+http://tkf.github.io/emacs-jedi/latest/
+BUT make sure virtualenv is installed first
+
+Experimental
+Use jedi-direx to get source code tree view
+Download from here: https://github.com/tkf/emacs-jedi-direx
+See .emacs for setup
