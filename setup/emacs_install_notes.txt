@@ -11,6 +11,8 @@ To install jedi, follow the instructions here:
 http://tkf.github.io/emacs-jedi/latest/
 BUT make sure virtualenv is installed first
 
+Install projectile and helm-projectile from melpa-stable
+
 Experimental
 Use jedi-direx to get source code tree view
 Download from here: https://github.com/tkf/emacs-jedi-direx

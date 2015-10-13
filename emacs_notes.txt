@@ -7,6 +7,7 @@ C-i     (helm) find code object (semantic)
 C-c x   (jedi-direx) Switch to source tree view
 C-c C-z (python-mode) Switch to python shell
 C-c C-c (python-mode) Execute buffer
+C-c p f (projectile) projectile find file
 
 Run e.g. pytest
 M-x compile
