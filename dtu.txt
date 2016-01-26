@@ -1,0 +1,3 @@
+Mount DTU share
+
+sudo mount.cifs //lynnas.win.dtu.dk/kenni hhhjk -o dom=win,username=kenni

@@ -1,0 +1,8 @@
+apt
+===
+List installed version of package: dpkg -s <package_name>
+Search for files: apt-file search <file>   # First update: apt-file update
+
+pip
+===
+user install: pip install --user <packagename>
