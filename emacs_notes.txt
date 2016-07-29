@@ -4,7 +4,10 @@ C-c ?   (jedi) show doc for object under point
 C-c .   (jedi) goto-definition
 C-c , 	(jedi) goto-definition pop marker (i.e. go back)
 C-i     (helm) find code object (semantic)
-C-c x   (jedi-direx) Switch to source tree view
+S-tab	(helm-files) one level up
+~/	(helm-files) to home
+/	(helm-files) to root
+S-tab	(helm-files) one level up
 C-c C-z (python-mode) Switch to python shell
 C-c C-c (python-mode) Execute buffer
 C-c p f (projectile) projectile find file
