@@ -1,25 +1,36 @@
 ### Day to day usage
 
-C-c ?   (jedi) show doc for object under point
-C-c .   (jedi) goto-definition
-C-c , 	(jedi) goto-definition pop marker (i.e. go back)
-C-i     (helm) find code object (semantic)
-S-tab	(helm-files) one level up
-~/	(helm-files) to home
-/	(helm-files) to root
-S-tab	(helm-files) one level up
-C-c C-z (python-mode) Switch to python shell
-C-c C-c (python-mode) Execute buffer
-C-c p f (projectile) projectile find file
-
-Run e.g. pytest
-M-x compile
- (and change the command e.g. to py.test)
-
-# Package handling
-list-packages
- i mark for installation
- u unmark
- d delete
- x execute
- r refresh
+C-c h    (helm) Command -=PREFIX=-                     | C-c ? (jedi) show doc for object under point
+C-h C-h  (helm) Help show help                         | C-c . (jedi) goto-definition
+M-y      (helm) Show kill ring                         | C-c , (jedi) goto-definition pop marker (i.e. go back)
+C-z      (helm) Perform persistent action              |
+prefix / (helm) find unix command interface            | C-c C-z (python-mode) Switch to python shell
+prefix l (helm) locate unix command interface          | C-c C-c (python-mode) Execute buffer
+prefix o (helm) helm occur (search)                    |
+prefix b (helm) helm resume (last helm session)        | C-c p h (projectile) projectile find file/buffer/project
+prefix C-, (helm) helm calcul                          | C-c p f (projectile) projectile find file
+                                                       | C-c p p (projectile) projectile find project
+C-i      (helm) helm-semantic find code object         |
+^t       (helm-semantic) Show only classes (f)unction  |
+                                                       |
+C-x b    (helm) helm-mini (open and recent files)      |
+← →      (helm-mini) Swictches groups                  |
+@search  (helm-mini Only buffers that contain "search" |
+C-s      (helm-mini) helm-occur display matches	       |
+                                                       |
+C-x C-f  (helm) helm find files                        | Run e.g. pytest
+S-tab    (helm-files) one level up                     | M-x compile
+C-l      (helm-files) one level up                     |  (and change the command e.g. to py.test)
+~/       (helm-files) to home                          |
+/	 (helm-files) to root                          |
+append/  (helm-files) create directory                 |
+                                                       |
+prefix t (helm) helm top                               | # Package handling
+C-c C-u  (helm-top) refresh                            | list-packages
+Enter    (helm-top) kill                               |  i mark for installation
+f4       (helm-top) choose signal                      |  u unmark
+M-C      (helm-top) Sort by CPU                        |  d delete
+M-M      (helm-top) Sort by memory                     |  x execute
+                                                       |  r refresh
+prefix c (helm) helm color
+f4       (helm-color) insert RGB
